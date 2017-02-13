@@ -13,6 +13,16 @@ class UsersController < ApplicationController
     render json: @user
   end
 
+  def user_auth
+
+    @user = User.where(id: params[:user][:id], name: params[:user][:name], password: params[:user][:password]).first
+    if @user
+      render json: @user
+    else
+      render status: 404
+    end
+  end
+
   # POST /users
   def create
     @user = User.new(user_params)
