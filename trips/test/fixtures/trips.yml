@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  from: MyString
+  to: MyString
+  date: MyString
+  price: MyString
+  number_of_seats: MyString
+
+two:
+  user_id: 
+  from: MyString
+  to: MyString
+  date: MyString
+  price: MyString
+  number_of_seats: MyString
