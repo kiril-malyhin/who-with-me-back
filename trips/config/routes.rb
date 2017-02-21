@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   resources :trips
   resources :users
   post '/user_auth' => 'users#user_auth'
